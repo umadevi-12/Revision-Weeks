@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>🎬 Movie Explorer</h2>
+
+        <input type="text" id="searchInput" placeholder="Search movies...">
+
+        <div id="movies"></div>
+
+        <div class="pagination">
+            <button id="prevBtn">Previous</button>
+            <span id="pageInfo"></span>
+            <button id="nextBtn">Next</button>
+        </div>
+
+        <div id="loading" class="loading">Loading...</div>
+        <div id="error" class="error"></div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
