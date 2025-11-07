@@ -1,0 +1,58 @@
+
+.animated-banner {
+  display: inline-block;
+  position: relative;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.text {
+  display: inline-block;
+  transition: opacity 400ms ease-in-out;
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 6px;
+  font-weight: 600;
+  animation: blink 900ms step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7ff 0%, #f0f9ff 100%);
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.banner-box {
+  text-align: center;
+  background: #fff;
+  padding: 40px 60px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(20, 30, 60, 0.08);
+}
+
+.subtitle {
+  margin-top: 16px;
+  color: #556;
+}
